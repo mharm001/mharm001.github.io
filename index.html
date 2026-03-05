@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>harmant.app</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0a0b; color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .container { max-width: 400px; width: 100%; padding: 24px; text-align: center; }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.5px; }
+    .subtitle { color: #71717a; font-size: 14px; margin-bottom: 40px; }
+    .apps { display: flex; flex-direction: column; gap: 12px; }
+    .app-card { display: flex; align-items: center; gap: 16px; background: #18181b; border: 1px solid #27272a; border-radius: 12px; padding: 20px; text-decoration: none; color: #fff; transition: all 0.2s; }
+    .app-card:hover { border-color: #3f3f46; background: #1f1f23; transform: translateY(-1px); }
+    .app-icon { font-size: 32px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 10px; flex-shrink: 0; }
+    .app-info { text-align: left; }
+    .app-name { font-size: 17px; font-weight: 600; margin-bottom: 2px; }
+    .app-desc { font-size: 13px; color: #a1a1aa; }
+    .arrow { margin-left: auto; color: #3f3f46; font-size: 18px; }
+    .app-card:hover .arrow { color: #71717a; }
+    .footer { margin-top: 48px; color: #3f3f46; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>harmant.app</h1>
+    <p class="subtitle">Apps by Miguel Harmant</p>
+    <div class="apps">
+      <a href="/workit" class="app-card">
+        <div class="app-icon" style="background: rgba(249,115,22,0.1);">🏋️</div>
+        <div class="app-info">
+          <div class="app-name">Workit</div>
+          <div class="app-desc">Track workouts, reps, weight & progress</div>
+        </div>
+        <div class="arrow">›</div>
+      </a>
+      <a href="/cutit" class="app-card">
+        <div class="app-icon" style="background: rgba(34,211,238,0.1);">✂️</div>
+        <div class="app-info">
+          <div class="app-name">Cutit</div>
+          <div class="app-desc">Coming soon</div>
+        </div>
+        <div class="arrow">›</div>
+      </a>
+    </div>
+    <div class="footer">Built with ☕ and code</div>
+  </div>
+</body>
+</html>
